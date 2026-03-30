@@ -1991,6 +1991,84 @@
       color: rgba(255, 255, 255, .65)
     }
 
+
+    /* ════════════════════ FAQ ════════════════════ */
+    #faq {
+      padding: 100px 0;
+      background: var(--w)
+    }
+
+    .faq-wrap {
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px
+    }
+
+    .faq-item {
+      border: 1px solid rgba(10, 112, 184, .12);
+      border-radius: var(--r12);
+      background: var(--w);
+      overflow: hidden;
+      box-shadow: 0 2px 14px rgba(10, 27, 68, .05);
+      transition: border-color var(--ease), box-shadow var(--ease)
+    }
+
+    .faq-item:hover {
+      border-color: rgba(10, 112, 184, .28);
+      box-shadow: 0 8px 24px rgba(10, 27, 68, .08)
+    }
+
+    .faq-question {
+      width: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      text-align: left;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--n)
+    }
+
+    .faq-icon {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--b);
+      transition: transform var(--ease);
+      flex-shrink: 0
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease, padding .35s ease;
+      padding: 0 24px
+    }
+
+    .faq-answer p {
+      font-size: .84rem;
+      font-weight: 300;
+      color: var(--tl);
+      line-height: 1.8;
+      padding-bottom: 22px
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 240px
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg)
+    }
+
+
     /* ════════════════════ ANIMATIONS ════════════════════ */
     @keyframes slideUp {
       from {
@@ -2160,6 +2238,20 @@
 
       .hero-trust {
         gap: 18px
+      }
+
+      .faq-question {
+        font-size: .86rem;
+        padding: 18px 18px
+      }
+
+      .faq-answer {
+        padding: 0 18px
+      }
+
+      .faq-answer p {
+        font-size: .8rem;
+        line-height: 1.75
       }
     }
   </style>
@@ -2804,6 +2896,119 @@
     </div>
   </section>
 
+
+  <!-- ══════════════ FAQ ══════════════ -->
+  <section id="faq">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-tag">Still Have Questions? We’ve Got You Covered</div>
+        <h2 class="sec-h">Everything you need to know about <span>Enterprise Digitization before getting started</span></h2>
+        <!-- <p class="sec-p">Everything you need to know before starting your digitization journey with NeoLotex.</p> -->
+      </div>
+      <div class="faq-wrap reveal">
+        <div class="faq-item active">
+          <button class="faq-question" type="button">
+            <span>What is Enterprise Digitization?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Enterprise Digitization is the process of converting physical records, paper files, and unstructured business data into structured, searchable, and usable digital assets. It helps organizations improve access, control, operational speed, and long-term scalability.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>What types of documents can NeoLotex digitize?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>NeoLotex can support digitization of customer files, KYC documents, invoices, vouchers, employee files, medical records, PODs, archive records, administrative files, and other high-volume business documents across departments.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>How does Enterprise Digitization improve business efficiency?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>It reduces time spent on physical retrieval, manual data handling, and repetitive processing. Once records are digitized and structured, teams can search, access, validate, and use information faster across locations and functions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Is the digitization process secure?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. A well-managed digitization process improves control over records by reducing dependence on physical files and enabling structured handling, validation, traceability, and stronger governance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Can NeoLotex handle large backfile or archive digitization projects?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. NeoLotex can support both large archive conversion projects and ongoing daily inflow, making Enterprise Digitization suitable for one-time backfile digitization as well as continuous operational digitization.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Which industries benefit most from Enterprise Digitization?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>It is especially valuable for document-heavy sectors such as NBFC &amp; MFI, BFSI, Healthcare, Logistics, Manufacturing, Government, Finance, HR, and enterprise operations where records are critical to speed, compliance, and decision-making.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>How long does an Enterprise Digitization project take?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Timelines depend on document volume, record condition, indexing requirements, and validation scope. Small projects can move quickly, while large digitization programs are planned in phases for speed and accuracy.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Can digitized records be integrated with other business systems?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Digitized and structured data can be prepared for use in document management systems, workflows, ERP, CRM, finance systems, HR systems, and other business applications depending on the project scope.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Will digitization help reduce storage and operational costs?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. By reducing dependence on physical storage, manual retrieval, and repetitive handling, Enterprise Digitization helps improve productivity and can significantly reduce operational overhead over time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>How do I get started with NeoLotex Enterprise Digitization?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>The best way to start is with a consultation. NeoLotex can understand your document volume, use case, business goals, and operational challenges, then recommend the right digitization approach for your organization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ══════════════ CONTACT ══════════════ -->
   <section id="contact">
     <div class="container">
@@ -3048,6 +3253,23 @@
       ['f-name', 'f-email', 'f-phone'].forEach(id => document.getElementById(id).value = '');
       document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
     }
+
+    /* ── FAQ Accordion ── */
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isActive = item.classList.contains('active');
+
+        document.querySelectorAll('.faq-item').forEach(faq => {
+          faq.classList.remove('active');
+        });
+
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+
   </script>
 </body>
 
