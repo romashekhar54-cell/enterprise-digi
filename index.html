@@ -4,7 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enterprise Digitization | NeoLotex</title>
+  <title>AI-Powered Enterprise Digitization Services | NeoLotex</title>
+  <meta name="description"
+    content="NeoLotex provides AI-powered enterprise digitization services including document scanning, AI OCR, intelligent indexing, data capture, validation, and digital record management to convert physical records into secure, searchable digital assets.">
+
+  <meta name="keywords"
+    content="AI Enterprise Digitization Services, AI Document Digitization, AI OCR Services, AI OCR & Document Scanning, Intelligent Indexing, Records Digitization, AI-Assisted Data Capture, Intelligent Data Management, Paper to Digital Transformation, Secure Document Digitization, NeoLotex">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://digitization.neolotex.com/">
+
+  <meta property="og:title" content="AI-Powered Enterprise Digitization Services by NeoLotex">
+  <meta property="og:description"
+    content="Convert physical records into secure, searchable, AI-indexed, and business-ready digital assets with NeoLotex Enterprise Digitization Services.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://digitization.neolotex.com/">
+  <meta property="og:image" content="https://digitization.neolotex.com/img/enterprise-digitization-og.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
   <style>
@@ -136,10 +152,10 @@
     .btn-primary {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 4px;
       background: var(--b);
       color: #fff;
-      padding: .82rem 2rem;
+      padding: .75rem 1rem;
       border-radius: var(--r8);
       font-family: 'Poppins', sans-serif;
       font-size: .78rem;
@@ -356,24 +372,25 @@
     }
 
     .nav-demo {
-      background: var(--r);
-      color: #fff;
-      padding: .44rem 1.2rem;
-      border-radius: var(--r4);
+      background: linear-gradient(135deg, #0A70B8, #0E2B82);
+      color: #ffffff;
+      padding: 0.72rem 1.35rem;
+      border-radius: 50px;
       font-family: 'Poppins', sans-serif;
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .08em;
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      border: none;
+      border: 1px solid rgba(255, 255, 255, 0.25);
       cursor: pointer;
-      transition: background var(--b), transform .15s;
-      box-shadow: 0 3px 12px rgba(8, 49, 231, 0.25)
+      box-shadow: 0 8px 22px rgba(10, 112, 184, 0.32);
+      transition: all 0.25s ease;
     }
 
     .nav-demo:hover {
-      background: var(--rd);
-      transform: translateY(-1px)
+      background: linear-gradient(135deg, #0E2B82, #0A70B8);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(10, 112, 184, 0.42);
     }
 
     .hbg {
@@ -478,7 +495,7 @@
     .hero-trust {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 18px;
       margin-top: 44px;
       padding-top: 28px;
       border-top: 1px solid rgba(10, 27, 68, .07);
@@ -745,13 +762,13 @@
 
     /* ════════════════════ FEATURES ════════════════════ */
     #features {
-      padding: 100px 0;
+      padding: 54px 20px 70px;
       background: var(--w)
     }
 
     .features-intro {
       text-align: center;
-      margin-bottom: 64px
+      margin-bottom: 34px
     }
 
     .features-intro .sec-p {
@@ -762,19 +779,23 @@
     .feat-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
-      background: rgba(10, 112, 184, .08);
+      gap: 18px;
+      background: transparent;
       border-radius: var(--r16);
-      overflow: hidden;
-      border: 1px solid rgba(10, 112, 184, .1)
+      overflow: visible;
+      border: 0
     }
 
     .feat-card {
-      background: var(--w);
-      padding: 40px 32px;
+      min-height: 190px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fcff 100%);
+      padding: 22px 22px 20px;
       position: relative;
       overflow: hidden;
-      transition: background var(--ease);
+      border: 1px solid rgba(10, 112, 184, .14);
+      border-radius: 18px;
+      box-shadow: 0 10px 28px rgba(10, 27, 68, .06);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background var(--ease);
       cursor: default
     }
 
@@ -792,64 +813,80 @@
     }
 
     .feat-card:hover {
-      background: var(--f)
+      transform: translateY(-5px);
+      border-color: rgba(10, 112, 184, .34);
+      box-shadow: 0 18px 42px rgba(10, 112, 184, .13);
+      background: #ffffff
     }
 
     .feat-card:hover::before {
       transform: scaleX(1)
     }
 
+    .feat-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px
+    }
+
     .feat-num {
-      font-size: 3.5rem;
+      font-size: 2rem;
       font-weight: 800;
-      color: rgba(10, 112, 184, .06);
+      color: rgba(10, 112, 184, .10);
       line-height: 1;
-      margin-bottom: 18px;
+      margin-bottom: 0;
+      letter-spacing: -.04em;
       transition: color var(--ease)
     }
 
     .feat-card:hover .feat-num {
-      color: rgba(10, 112, 184, .14)
+      color: rgba(10, 112, 184, .20)
     }
 
     .feat-ico-wrap {
-      width: 52px;
-      height: 52px;
+      width: 42px;
+      height: 42px;
       border-radius: 12px;
-      background: linear-gradient(135deg, rgba(10, 112, 184, .1), rgba(14, 43, 130, .07));
+      background: linear-gradient(135deg, rgba(10, 112, 184, .11), rgba(14, 43, 130, .07));
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 18px;
-      transition: background var(--ease)
+      margin-bottom: 0;
+      flex-shrink: 0;
+      transition: background var(--ease), transform .25s ease
     }
 
     .feat-card:hover .feat-ico-wrap {
-      background: linear-gradient(135deg, rgba(10, 112, 184, .18), rgba(14, 43, 130, .12))
+      background: linear-gradient(135deg, rgba(10, 112, 184, .18), rgba(14, 43, 130, .12));
+      transform: scale(1.04)
     }
 
     .feat-ico-wrap svg {
-      width: 24px;
-      height: 24px;
+      width: 21px;
+      height: 21px;
       stroke: var(--b);
       fill: none;
-      stroke-width: 1.7;
+      stroke-width: 1.8;
       stroke-linecap: round;
       stroke-linejoin: round
     }
 
     .feat-title {
       font-size: .98rem;
-      font-weight: 700;
+      font-weight: 800;
       color: var(--n);
-      margin-bottom: 10px
+      margin-bottom: 8px;
+      line-height: 1.35
     }
 
     .feat-desc {
-      font-size: .82rem;
+      font-size: .78rem;
       font-weight: 300;
       color: var(--tl);
-      line-height: 1.75
+      line-height: 1.65;
+      margin: 0
     }
 
     /* ════════════════════ HOW IT WORKS ════════════════════ */
@@ -1991,84 +2028,6 @@
       color: rgba(255, 255, 255, .65)
     }
 
-
-    /* ════════════════════ FAQ ════════════════════ */
-    #faq {
-      padding: 100px 0;
-      background: var(--w)
-    }
-
-    .faq-wrap {
-      margin-top: 48px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px
-    }
-
-    .faq-item {
-      border: 1px solid rgba(10, 112, 184, .12);
-      border-radius: var(--r12);
-      background: var(--w);
-      overflow: hidden;
-      box-shadow: 0 2px 14px rgba(10, 27, 68, .05);
-      transition: border-color var(--ease), box-shadow var(--ease)
-    }
-
-    .faq-item:hover {
-      border-color: rgba(10, 112, 184, .28);
-      box-shadow: 0 8px 24px rgba(10, 27, 68, .08)
-    }
-
-    .faq-question {
-      width: 100%;
-      background: transparent;
-      border: none;
-      outline: none;
-      padding: 22px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      text-align: left;
-      cursor: pointer;
-      font-family: 'Poppins', sans-serif;
-      font-size: .95rem;
-      font-weight: 600;
-      color: var(--n)
-    }
-
-    .faq-icon {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--b);
-      transition: transform var(--ease);
-      flex-shrink: 0
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .35s ease, padding .35s ease;
-      padding: 0 24px
-    }
-
-    .faq-answer p {
-      font-size: .84rem;
-      font-weight: 300;
-      color: var(--tl);
-      line-height: 1.8;
-      padding-bottom: 22px
-    }
-
-    .faq-item.active .faq-answer {
-      max-height: 240px
-    }
-
-    .faq-item.active .faq-icon {
-      transform: rotate(45deg)
-    }
-
-
     /* ════════════════════ ANIMATIONS ════════════════════ */
     @keyframes slideUp {
       from {
@@ -2239,19 +2198,186 @@
       .hero-trust {
         gap: 18px
       }
+    }
 
-      .faq-question {
-        font-size: .86rem;
-        padding: 18px 18px
+
+    /* ════════════════════ FLOATING LEAD POPUP ════════════════════ */
+    .lead-popup-trigger {
+      position: fixed;
+      right: 28px;
+      bottom: 28px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--b), var(--bd));
+      color: #fff;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1500;
+      box-shadow: 0 14px 34px rgba(10, 112, 184, .35);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .lead-popup-trigger:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 42px rgba(10, 112, 184, .45);
+    }
+
+    .lead-popup-trigger svg {
+      width: 28px;
+      height: 28px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .lead-popup {
+      position: fixed;
+      right: 28px;
+      bottom: 100px;
+      width: min(350px, calc(100vw - 36px));
+      background: #fff;
+      border-radius: 22px;
+      padding: 28px 26px 24px;
+      z-index: 1501;
+      box-shadow: 0 24px 70px rgba(10, 27, 68, .22);
+      border: 1px solid rgba(10, 112, 184, .12);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(18px) scale(.96);
+      transition: opacity .28s ease, visibility .28s ease, transform .28s ease;
+    }
+
+    .lead-popup.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0) scale(1);
+    }
+
+    .lead-popup-close {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 28px;
+      height: 28px;
+      border: 0;
+      background: transparent;
+      color: var(--tl);
+      font-size: 28px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .lead-popup-icon-wrap {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      margin-bottom: 18px;
+    }
+
+    .lead-popup-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--n);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 28px rgba(10, 27, 68, .2);
+    }
+
+    .lead-popup-icon svg {
+      width: 30px;
+      height: 30px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .lead-popup-badge {
+      position: absolute;
+      right: -3px;
+      top: -3px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #E33F3F;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      border: 2px solid #fff;
+    }
+
+    .lead-popup h3 {
+      font-size: 1.15rem;
+      line-height: 1.45;
+      color: var(--n);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .lead-popup h3 span {
+      color: var(--b);
+    }
+
+    .lead-popup p {
+      font-size: .82rem;
+      color: var(--tl);
+      line-height: 1.7;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .lead-popup-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background: linear-gradient(135deg, var(--b), var(--bd));
+      color: #fff;
+      border-radius: 10px;
+      padding: .88rem 1.2rem;
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      box-shadow: 0 10px 24px rgba(10, 112, 184, .25);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .lead-popup-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(10, 112, 184, .34);
+    }
+
+    .lead-popup-help {
+      display: block;
+      margin-top: 14px;
+      text-align: center;
+      font-size: .76rem;
+      color: var(--tm);
+      font-weight: 600;
+    }
+
+    @media(max-width:600px) {
+      .lead-popup {
+        right: 18px;
+        bottom: 88px;
       }
 
-      .faq-answer {
-        padding: 0 18px
-      }
-
-      .faq-answer p {
-        font-size: .8rem;
-        line-height: 1.75
+      .lead-popup-trigger {
+        right: 18px;
+        bottom: 18px;
       }
     }
   </style>
@@ -2273,7 +2399,7 @@
 
     <div class="nav-right">
     </div>
-    <a class="nav-demo" href="#contact">Book a free Demo</a>
+    <a class="nav-demo" href="#contact">Talk to Digitization Expert</a>
     <div class="hbg" id="hbg" onclick="toggleNav()"><span></span><span></span><span></span></div>
     </div>
   </nav>
@@ -2281,23 +2407,41 @@
   <!-- ══════════════ HERO ══════════════ -->
   <section id="home">
     <div class="hero-left">
-      <div class="hero-eyebrow"><span class="dot"></span>Enterprise Digitization</div>
+      <div class="hero-eyebrow"><span class="dot"></span>AI-POWERED AI DIGITIZATION SOLUTIONS</div>
       <h1 class="hero-h1">
-        Digitize Every<br>
-        <span class="blue">Business Record</span><br>
+        AI-Powered<br>
+        <span class="blue">Enterprise Digitization</span><br>
       </h1>
-      <p class="hero-sub">NeoLotex Enterprise Digitization helps you convert physical records into structured,
-        searchable, and business-ready digital assets through document scanning, data entry, data management, and
-        transformation support.</p>
+      <p class="hero-sub">NeoLotex Enterprise Digitization uses AI OCR, intelligent indexing, smart data capture, and
+        quality validation to transform physical records into secure, searchable, and business-ready digital assets. We
+        help enterprises reduce manual effort, improve access, and accelerate operations with confidence.</p>
       <div class="hero-btns">
         <a class="btn-primary" href="#contact">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
             <path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M13 12H3" />
           </svg>
-          Schedule a Free Demo
+          See Digitization in Action
         </a>
         <a class="btn-outline" href="#features">See How It works</a>
+      </div>
+      <div class="hero-trust-points"
+        style="display:flex; align-items:center; gap:16px; margin-top:40px; flex-wrap:nowrap; font-size:13px; font-weight:700; color:#0B1F4D; white-space:nowrap;">
+        <span style="display:inline-flex; align-items:center; gap:5px;">
+          <span style="color:#0084CD;">✓</span> AI OCR
+        </span>
+
+        <span style="display:inline-flex; align-items:center; gap:5px;">
+          <span style="color:#0084CD;">✓</span> Smart Indexing
+        </span>
+
+        <span style="display:inline-flex; align-items:center; gap:5px;">
+          <span style="color:#0084CD;">✓</span> Secure Conversion
+        </span>
+
+        <span style="display:inline-flex; align-items:center; gap:5px;">
+          <span style="color:#0084CD;">✓</span> Search-Ready Records
+        </span>
       </div>
       <div class="hero-trust">
         <div class="htrust-item">
@@ -2316,7 +2460,7 @@
         </div>
         <div class="htrust-sep"></div>
         <div class="htrust-item">
-          <div class="htrust-num">15</div>
+          <div class="htrust-num">16</div>
           <div class="htrust-lbl">Years Expertise</div>
         </div>
       </div>
@@ -2419,135 +2563,222 @@
   </div>
 
   <!-- ══════════════ FEATURES ══════════════ -->
+  <!-- <section id="features"> -->
+  <!-- ══════════════ DIGITIZATION CHALLENGE ══════════════ -->
+  <section id="digitization-challenge" style="padding:60px 20px; background:#ffffff;">
+    <div style="max-width:1200px; margin:0 auto;">
+
+      <div style="max-width:820px; margin:0 auto 40px; text-align:center;">
+        <div
+          style="display:inline-flex; align-items:center; gap:10px; margin-bottom:14px; font-size:12px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#0A70B8;">
+          <span style="width:22px; height:2px; background:#2a16dd; display:inline-block;"></span>
+          AI DIGITIZATION CHALLENGE
+          <span style="width:22px; height:2px; background:#2a16dd; display:inline-block;"></span>
+        </div>
+
+        <h2
+          style="margin:0 0 16px; font-size:clamp(32px, 4vw, 46px); line-height:1.15; color:#0A1B44; font-weight:800;">
+          Is Manual Paperwork Slowing Your Business Down?
+        </h2>
+
+        <p style="margin:0 auto; max-width:760px; font-size:16px; line-height:1.8; color:#4A6382; font-weight:300;">
+          Paper files, legacy archives, and manual record handling can slow down operations, increase costs, and make
+          information difficult to access. NeoLotex AI-enabled Enterprise Digitization helps businesses convert physical
+          documents into secure, searchable, intelligently indexed, and structured digital records for faster access and
+          better control.
+        </p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:22px;">
+
+        <div
+          style="min-height:170px; padding:26px 28px; border-radius:16px; background:linear-gradient(135deg, #ffffff 0%, #F4F8FC 100%); border:1px solid rgba(10,112,184,0.14); box-shadow:0 12px 32px rgba(10,27,68,0.07);">
+          <h3 style="margin:0 0 10px; font-size:19px; line-height:1.3; color:#0A1B44; font-weight:800;">
+            Slow Document Retrieval
+          </h3>
+
+          <p style="margin:0; font-size:14.5px; line-height:1.7; color:#4A6382; font-weight:300;">
+            Finding records across files, folders, storage rooms, and branch archives consumes valuable time. AI OCR and
+            smart indexing make digitized records faster to search and retrieve.
+          </p>
+        </div>
+
+        <div
+          style="min-height:170px; padding:26px 28px; border-radius:16px; background:linear-gradient(135deg, #ffffff 0%, #F4F8FC 100%); border:1px solid rgba(10,112,184,0.14); box-shadow:0 12px 32px rgba(10,27,68,0.07);">
+          <h3 style="margin:0 0 10px; font-size:19px; line-height:1.3; color:#0A1B44; font-weight:800;">
+            High Manual Workload
+          </h3>
+
+          <p style="margin:0; font-size:14.5px; line-height:1.7; color:#4A6382; font-weight:300;">
+            Manual sorting, scanning, indexing, and data entry increase operational effort. AI-assisted data capture and
+            validation help reduce repetitive work and improve consistency.
+          </p>
+        </div>
+
+        <div
+          style="min-height:170px; padding:26px 28px; border-radius:16px; background:linear-gradient(135deg, #ffffff 0%, #F4F8FC 100%); border:1px solid rgba(10,112,184,0.14); box-shadow:0 12px 32px rgba(10,27,68,0.07);">
+          <h3 style="margin:0 0 10px; font-size:19px; line-height:1.3; color:#0A1B44; font-weight:800;">
+            Unstructured & Risk-Prone Records
+          </h3>
+
+          <p style="margin:0; font-size:14.5px; line-height:1.7; color:#4A6382; font-weight:300;">
+            Physical documents and legacy archives are difficult to search, track, protect, and use. Intelligent
+            classification and metadata tagging make records more structured and business-ready.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <section id="features">
     <div class="container">
       <div class="features-intro reveal">
-        <div class="section-tag">What Enterprise Digitization Does</div>
-        <h2 class="sec-h">One service line that converts<br><span>paper-heavy operations into digital workflows</span>
+        <div class="section-tag">AI DIGITIZATION CAPABILITIES</div>
+        <h2 class="sec-h">AI-Enabled Digitization<br><span>For Business-Critical Records</span>
         </h2>
       </div>
       <div class="feat-grid reveal">
         <div class="feat-card">
-          <div class="feat-num">01</div>
-          <div class="feat-ico-wrap">
-            <svg viewBox="0 0 24 24">
-              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-              <polyline points="17 8 12 3 7 8" />
-              <line x1="12" y1="3" x2="12" y2="15" />
-            </svg>
+          <div class="feat-top">
+            <div class="feat-ico-wrap">
+              <svg viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="17 8 12 3 7 8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+              </svg>
+            </div>
+            <div class="feat-num">01</div>
           </div>
-          <div class="feat-title">Document Scanning Services</div>
-          <p class="feat-desc">Transform physical files into clean digital images and structured records that are ready
-            for indexing, search, and downstream business use.</p>
+          <div class="feat-title">AI OCR & Document Scanning</div>
+          <p class="feat-desc">Transform physical files into clean digital images using scanning and AI OCR, making
+            records ready for indexing, search, and downstream business use.</p>
         </div>
         <div class="feat-card">
-          <div class="feat-num">02</div>
-          <div class="feat-ico-wrap">
-            <svg viewBox="0 0 24 24">
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
+          <div class="feat-top">
+            <div class="feat-ico-wrap">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </div>
+            <div class="feat-num">02</div>
           </div>
-          <div class="feat-title">Data Entry Services</div>
-          <p class="feat-desc">Improve speed, consistency, and cost efficiency by converting manual data handling into
-            structured digitization workflows with quality control.</p>
+          <div class="feat-title">AI-Assisted Data Capture</div>
+          <p class="feat-desc">Improve speed, consistency, and cost efficiency by using AI-assisted data capture with
+            structured digitization workflows and quality control.</p>
         </div>
         <div class="feat-card">
-          <div class="feat-num">03</div>
-          <div class="feat-ico-wrap">
-            <svg viewBox="0 0 24 24">
-              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-              <circle cx="9" cy="7" r="4" />
-              <path d="M23 21v-2a4 4 0 00-3-3.87" />
-              <path d="M16 3.13a4 4 0 010 7.75" />
-            </svg>
+          <div class="feat-top">
+            <div class="feat-ico-wrap">
+              <svg viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87" />
+                <path d="M16 3.13a4 4 0 010 7.75" />
+              </svg>
+            </div>
+            <div class="feat-num">03</div>
           </div>
-          <div class="feat-title">Data Management Services</div>
-          <p class="feat-desc">Standardize formats, organize fields, and maintain usable business data so records remain
-            consistent, searchable, and easier to manage.</p>
+          <div class="feat-title">Intelligent Data Management</div>
+          <p class="feat-desc">Standardize formats, organize fields, and maintain usable business data with intelligent
+            structuring so records remain consistent, searchable, and easier to manage.</p>
         </div>
         <div class="feat-card">
-          <div class="feat-num">04</div>
-          <div class="feat-ico-wrap">
-            <svg viewBox="0 0 24 24">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-            </svg>
+          <div class="feat-top">
+            <div class="feat-ico-wrap">
+              <svg viewBox="0 0 24 24">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <div class="feat-num">04</div>
           </div>
-          <div class="feat-title">Structured Capture & Conversion</div>
-          <p class="feat-desc">Create reliable digital outputs from legacy files, forms, and archives so information can
-            move faster across departments and functions.</p>
+          <div class="feat-title">Smart Indexing & Metadata Tagging</div>
+          <p class="feat-desc">Organize every document with intelligent tags, fields, and reference details so your team
+            can search and retrieve records faster.</p>
         </div>
         <div class="feat-card">
-          <div class="feat-num">05</div>
-          <div class="feat-ico-wrap">
-            <svg viewBox="0 0 24 24">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            </svg>
+          <div class="feat-top">
+            <div class="feat-ico-wrap">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div class="feat-num">05</div>
           </div>
-          <div class="feat-title">Secure, Cost-Effective Execution</div>
-          <p class="feat-desc">NeoLotex positions Enterprise Digitization as a faster, secure, and cost-effective
-            approach for organizations modernizing document-heavy operations.</p>
+          <div class="feat-title">AI-Assisted Quality Validation</div>
+          <p class="feat-desc">Ensure every digitized record is reviewed for clarity, completeness, accuracy, and
+            business readiness before it moves into use.</p>
         </div>
         <div class="feat-card">
-          <div class="feat-num">06</div>
-          <div class="feat-ico-wrap">
-            <svg viewBox="0 0 24 24">
-              <rect x="2" y="3" width="20" height="14" rx="2" />
-              <line x1="8" y1="21" x2="16" y2="21" />
-              <line x1="12" y1="17" x2="12" y2="21" />
-            </svg>
+          <div class="feat-top">
+            <div class="feat-ico-wrap">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <div class="feat-num">06</div>
           </div>
-          <div class="feat-title">Search-Ready Digital Records</div>
-          <p class="feat-desc">Once digitized, records are easier to retrieve, validate, and use across branches,
-            archives, finance, healthcare, and operations teams.</p>
+          <div class="feat-title">AI-Ready Searchable Records</div>
+          <p class="feat-desc">Once digitized and AI-indexed, records are easier to retrieve, validate, and use across
+            branches, archives, finance, healthcare, and operations teams.</p>
         </div>
         <div class="feat-card">
-          <div class="feat-num">07</div>
-          <div class="feat-ico-wrap">
-            <svg viewBox="0 0 24 24">
-              <path d="M18 20V10M12 20V4M6 20v-6" />
-            </svg>
+          <div class="feat-top">
+            <div class="feat-ico-wrap">
+              <svg viewBox="0 0 24 24">
+                <path d="M18 20V10M12 20V4M6 20v-6" />
+              </svg>
+            </div>
+            <div class="feat-num">07</div>
           </div>
-          <div class="feat-title">Scalable Batch Processing</div>
-          <p class="feat-desc">Handle high-volume backfiles, daily inflow, or department-wise digitization programs
-            without changing the service model or delivery structure.</p>
+          <div class="feat-title">AI-Enabled Batch Processing</div>
+          <p class="feat-desc">Digitize large archives, daily document inflow, and department-wise records with scalable
+            AI-enabled execution designed for enterprise needs.</p>
         </div>
         <div class="feat-card">
-          <div class="feat-num">08</div>
-          <div class="feat-ico-wrap">
-            <svg viewBox="0 0 24 24">
-              <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" />
-              <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" />
-            </svg>
+          <div class="feat-top">
+            <div class="feat-ico-wrap">
+              <svg viewBox="0 0 24 24">
+                <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" />
+                <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" />
+              </svg>
+            </div>
+            <div class="feat-num">08</div>
           </div>
-          <div class="feat-title">Digital Transformation Support</div>
-          <p class="feat-desc">Use Enterprise Digitization as the foundation for broader process improvement, workflow
-            readiness, and business transformation initiatives.</p>
+          <div class="feat-title">AI-Ready Digital Transformation</div>
+          <p class="feat-desc">Build the foundation for faster workflows, reduced manual effort, better visibility, and
+            AI-ready document-driven business operations.</p>
         </div>
         <div class="feat-card">
-          <div class="feat-num">09</div>
-          <div class="feat-ico-wrap">
-            <svg viewBox="0 0 24 24">
-              <rect x="2" y="7" width="20" height="14" rx="2" />
-              <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
-            </svg>
+          <div class="feat-top">
+            <div class="feat-ico-wrap">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+              </svg>
+            </div>
+            <div class="feat-num">09</div>
           </div>
-          <div class="feat-title">Multi-Industry Readiness</div>
-          <p class="feat-desc">Well suited for NBFC & MFI, BFSI, Healthcare, Logistics, Manufacturing, Government, NGO,
-            and enterprise operations environments.</p>
+          <div class="feat-title">Secure AI-Enabled Conversion</div>
+          <p class="feat-desc">Handle business-critical records with controlled AI-enabled processes that support
+            confidentiality, accuracy, compliance, and long-term reliability.</p>
         </div>
       </div>
     </div>
+  </section>
   </section>
 
   <!-- ══════════════ HOW IT WORKS ══════════════ -->
   <section id="how">
     <div class="container">
       <div class="reveal">
-        <div class="section-tag">Simple Process</div>
-        <h2 class="sec-h">How <span>Enterprise Digitization</span> Works</h2>
-        <!-- <p class="sec-p">From physical records to searchable digital assets, the process is structured, secure, and
-          built for enterprise-scale execution.</p> -->
+        <div class="section-tag">AI DIGITIZATION WORKFLOW</div>
+        <h2 class="sec-h">How <span>AI Enterprise Digitization</span> Works</h2>
+        <!-- <p class="sec-p">NeoLotex follows a structured digitization workflow to convert physical records into secure,
+          searchable, and business-ready digital assets. From document collection and scanning to indexing, validation,
+          and digital access, every stage is designed for accuracy, speed, and control.</p> -->
       </div>
       <div class="how-layout">
         <div class="how-steps reveal-l">
@@ -2555,40 +2786,40 @@
             <div class="hs-num">01</div>
             <div>
               <div class="hs-title">Collect & Prepare</div>
-              <p class="hs-desc">Records are received from branches, departments, hospitals, warehouses, or archives and
-                prepared for structured batch digitization.</p>
+              <p class="hs-desc">Records are collected, sorted, and prepared based on document type, department, or
+                business process for smooth AI-enabled digitization.</p>
             </div>
           </div>
           <div class="how-step">
             <div class="hs-num">02</div>
             <div>
-              <div class="hs-title">Scan & Convert</div>
-              <p class="hs-desc">Physical files are scanned into clean digital images and converted into structured
-                outputs for indexing, data entry, and business use.</p>
+              <div class="hs-title">Scan, OCR & Convert</div>
+              <p class="hs-desc">Physical files are scanned into clean digital images and processed with AI OCR to
+                create structured outputs for indexing, data capture, and business use.</p>
             </div>
           </div>
           <div class="how-step">
             <div class="hs-num">03</div>
             <div>
-              <div class="hs-title">Capture & Validate</div>
-              <p class="hs-desc">Relevant fields are entered, checked, and organized so the resulting dataset is
-                accurate, consistent, and usable.</p>
+              <div class="hs-title">Capture & Validate with AI</div>
+              <p class="hs-desc">Relevant fields are captured, checked, and organized using AI-assisted validation so
+                the resulting dataset is accurate, consistent, and usable.</p>
             </div>
           </div>
           <div class="how-step">
             <div class="hs-num">04</div>
             <div>
-              <div class="hs-title">Organize & Structure</div>
-              <p class="hs-desc">Documents and data are grouped by type, date, department, or process so records can be
-                retrieved and governed more effectively.</p>
+              <div class="hs-title">Smart Index & Organize</div>
+              <p class="hs-desc">Documents are tagged with intelligent metadata, categories, and reference details to
+                enable faster search and retrieval.</p>
             </div>
           </div>
           <div class="how-step">
             <div class="hs-num">05</div>
             <div>
-              <div class="hs-title">Access & Use</div>
-              <p class="hs-desc">Digitized records become easier to search, retrieve, review, and route into business
-                processes across the organization.</p>
+              <div class="hs-title">Deliver AI-Ready Records</div>
+              <p class="hs-desc">Digitized records are delivered in a structured, AI-ready format, making them easier to
+                search, access, manage, and use across teams.</p>
             </div>
           </div>
         </div>
@@ -2658,9 +2889,9 @@
     <div class="container">
       <div class="reveal">
         <div class="section-tag">
-          Industries We Serve
+          INDUSTRY-READY DIGITIZATION
         </div>
-        <h2 class="sec-h">Enterprise Digitization solutions <span>deployed</span> across multiple business verticals
+        <h2 class="sec-h">Digitization Solutions Built <span>For</span> Document Heavy Industries
         </h2>
       </div>
       <div class="uc-grid">
@@ -2748,32 +2979,31 @@
         ">
 
             <p style="color:#0a84ff; font-size:12px; letter-spacing:2px; margin-bottom:20px;">
-              ENTERPRISE DIGITIZATION
+              AI DIGITIZATION SOLUTION
             </p>
 
             <h1 style="font-size:48px; line-height:1.2; color:#fff; margin-bottom:25px;">
               Your Physical Records.<br>
-              <span style="color:#0a84ff;">Finally Digitized.</span>
+              <span style="color:#0a84ff;">AI-Ready & Digitized.</span>
             </h1>
 
             <p style="color:#b8c7e0; font-size:16px; line-height:1.8; margin-bottom:20px;">
-              In many organizations, information is still trapped in paper files, disconnected folders, and legacy
-              archives.
-              Teams lose time searching, processing slows down, and operational visibility becomes harder to maintain.
+              Physical records often slow down business operations, increase manual effort, and make critical
+              information harder to access when teams need it most. Teams lose time searching, processing slows down,
+              and operational visibility becomes harder to maintain.
             </p>
 
             <p style="color:#b8c7e0; font-size:16px; line-height:1.8; margin-bottom:30px;">
-              This dependency on physical records creates avoidable delays, repetitive manual work, and higher process
-              costs.
+              NeoLotex AI-enabled Enterprise Digitization helps organizations convert paper documents, legacy archives,
+              and daily records into secure, searchable, intelligently indexed, and structured digital assets.
             </p>
 
-            <h3 style="color:#fff; margin-bottom:15px;">The Solution — Enterprise Digitization</h3>
+            <h3 style="color:#fff; margin-bottom:15px;">The Solution — AI-Enabled Enterprise Digitization</h3>
 
             <p style="color:#b8c7e0; font-size:16px; line-height:1.8;">
-              NeoLotex Enterprise Digitization is designed to convert physical documents into structured, searchable,
-              and business-ready digital assets.
-              It combines document scanning, data entry, and data management to support faster access, stronger control,
-              and long-term digital transformation.
+              From scanning and AI OCR to smart data capture, indexing, quality checks, and digital output preparation,
+              we help enterprises improve access, reduce manual work, and build a stronger foundation for AI-ready
+              digital operations.
             </p>
           </div>
 
@@ -2791,25 +3021,25 @@
           ">
 
               <p style="color:#0a84ff; font-size:12px; letter-spacing:2px; margin-bottom:10px;">
-                KEY CAPABILITIES
+                AI-ENABLED CAPABILITIES
               </p>
 
               <h2 style="color:#fff; font-size:32px; margin-bottom:20px;">
-                Enterprise<span style="color:#0a84ff;">Digitization</span>
+                Enterprise<span style="color:#0a84ff;"> Digitization</span>
               </h2>
 
               <ul style="color:#c7d6f5; line-height:1.9; padding-left:18px; margin-bottom:25px;">
-                <li>High-volume document scanning for structured digital capture</li>
-                <li>Data entry services to improve speed, accuracy, and consistency</li>
-                <li>Data management services to standardize and organize records</li>
-                <li>Search-ready digital outputs for easier retrieval and business use</li>
-                <li>Support for large archive conversion and ongoing daily inflow</li>
-                <li>A faster, secure, and cost-effective approach to digital transformation</li>
+                <li>High-volume document scanning for paper files, archives, and daily records</li>
+                <li>AI OCR, intelligent indexing, and metadata tagging for faster search and retrieval</li>
+                <li>AI-assisted data capture and validation to create clean, usable digital records</li>
+                <li>Quality checks to ensure clarity, completeness, accuracy, and business readiness</li>
+                <li>AI-ready, search-ready digital outputs for faster access across departments</li>
+                <li>Scalable AI-enabled digitization support for BFSI, NBFC, Healthcare, Logistics, and enterprises</li>
               </ul>
 
               <p style="color:#9fb2d8; font-size:14px; margin-bottom:25px;">
-                Trusted by enterprises across BFSI, NBFC, Healthcare, and Logistics for large-scale digitization and
-                operational efficiency.
+                Built for organizations that need secure, accurate, AI-enabled, and scalable digitization of
+                business-critical records.
               </p>
 
               <a href="#contact" style="
@@ -2821,7 +3051,7 @@
               text-decoration:none;
               font-weight:600;
             ">
-                Book a Free Demo
+                Talk to an Expert
               </a>
             </div>
           </div>
@@ -2835,10 +3065,9 @@
   <section id="testimonials">
     <div class="container">
       <div class="reveal">
-        <div class="section-tag">Client Voices</div>
-        <h2 class="sec-h">Trusted by<span>India's leading</span>
-          <br>
-          enterprises since 2010
+        <div class="section-tag">TRUSTED BY ENTERPRISES</div>
+        <h2 class="sec-h">Trusted by<span>Leading Enterprises</span><br>
+          Across India Since 2010
         </h2>
       </div>
       <div class="testi-grid">
@@ -2896,128 +3125,14 @@
     </div>
   </section>
 
-
-  <!-- ══════════════ FAQ ══════════════ -->
-  <section id="faq">
-    <div class="container">
-      <div class="reveal">
-        <div class="section-tag">Still Have Questions? We’ve Got You Covered</div>
-        <h2 class="sec-h">Everything you need to know about <span>Enterprise Digitization before getting started</span></h2>
-        <!-- <p class="sec-p">Everything you need to know before starting your digitization journey with NeoLotex.</p> -->
-      </div>
-      <div class="faq-wrap reveal">
-        <div class="faq-item active">
-          <button class="faq-question" type="button">
-            <span>What is Enterprise Digitization?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Enterprise Digitization is the process of converting physical records, paper files, and unstructured business data into structured, searchable, and usable digital assets. It helps organizations improve access, control, operational speed, and long-term scalability.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>What types of documents can NeoLotex digitize?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>NeoLotex can support digitization of customer files, KYC documents, invoices, vouchers, employee files, medical records, PODs, archive records, administrative files, and other high-volume business documents across departments.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>How does Enterprise Digitization improve business efficiency?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>It reduces time spent on physical retrieval, manual data handling, and repetitive processing. Once records are digitized and structured, teams can search, access, validate, and use information faster across locations and functions.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>Is the digitization process secure?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes. A well-managed digitization process improves control over records by reducing dependence on physical files and enabling structured handling, validation, traceability, and stronger governance.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>Can NeoLotex handle large backfile or archive digitization projects?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes. NeoLotex can support both large archive conversion projects and ongoing daily inflow, making Enterprise Digitization suitable for one-time backfile digitization as well as continuous operational digitization.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>Which industries benefit most from Enterprise Digitization?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>It is especially valuable for document-heavy sectors such as NBFC &amp; MFI, BFSI, Healthcare, Logistics, Manufacturing, Government, Finance, HR, and enterprise operations where records are critical to speed, compliance, and decision-making.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>How long does an Enterprise Digitization project take?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Timelines depend on document volume, record condition, indexing requirements, and validation scope. Small projects can move quickly, while large digitization programs are planned in phases for speed and accuracy.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>Can digitized records be integrated with other business systems?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes. Digitized and structured data can be prepared for use in document management systems, workflows, ERP, CRM, finance systems, HR systems, and other business applications depending on the project scope.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>Will digitization help reduce storage and operational costs?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes. By reducing dependence on physical storage, manual retrieval, and repetitive handling, Enterprise Digitization helps improve productivity and can significantly reduce operational overhead over time.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>How do I get started with NeoLotex Enterprise Digitization?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>The best way to start is with a consultation. NeoLotex can understand your document volume, use case, business goals, and operational challenges, then recommend the right digitization approach for your organization.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ══════════════ CONTACT ══════════════ -->
   <section id="contact">
-        <form action="https://script.google.com/macros/s/AKfycbxKee9xGImrf4kI4nMeAppOICYt4Jnz5BWx85bpONW9aTJPNih4mAcSJTCkMutQEn6E/exec" method="POST">
     <div class="container">
       <div class="reveal">
-        <div class="section-tag">Get In Touch</div>
-        <h2 class="sec-h">See Enterprise Digitization in <span>Action</span></h2>
-        <p class="sec-p">Book a personalized discussion tailored to your document volume, archive complexity, and
-          digitization requirements. Our team responds within 24 hours.</p>
+        <div class="section-tag">REQUEST AN AI DIGITIZATION CONSULTATION</div>
+        <h2 class="sec-h">Get Your AI Digitization <span>Consultation</span></h2>
+        <p class="sec-p">Share your details and our team will connect with you to understand your document volume,
+          process needs, AI OCR requirements, indexing needs, and digitization goals.</p>
       </div>
       <div class="contact-layout reveal">
         <!-- left -->
@@ -3084,30 +3199,56 @@
         <!-- right form -->
         <div class="c-form-card">
           <div class="c-form-header">
-            <div class="c-form-title">Request a Free Enterprise Digitization Demo</div>
+            <div class="c-form-title">Request an AI Digitization Assessment</div>
             <div class="c-form-sub">We respond within 24 hours usually much faster</div>
           </div>
           <div class="cform">
             <div class="cff">
               <label>Full Name</label>
-              <input name =" User Name" id="f-name" placeholder="e.g. Rajesh Kumar" />
+              <input type="text" id="f-name" placeholder="e.g. Rajesh Kumar" />
             </div>
             <div class="cff">
               <label>Email Address</label>
-              <input Name="User email" id="f-email" placeholder="e.g. rajesh@company.com" />
+              <input type="email" id="f-email" placeholder="e.g. rajesh@company.com" />
             </div>
             <div class="cff">
               <label>Phone Number</label>
-              <input  Name=" User phone number" type="tel" id="f-phone" placeholder="e.g. +91 98765 43210" />
+              <input type="tel" id="f-phone" placeholder="e.g. +91 98765 43210" />
             </div>
-            <button class="c-submit" onclick="handleSubmit()">Schedule my free demo →</button>
+            <button class="c-submit" onclick="handleSubmit()">Send Demo Request→</button>
             <div class="c-form-note">🔒 Your information is always kept private. No spam, ever.</div>
           </div>
         </div>
       </div>
     </div>
-    </form>
   </section>
+
+
+
+  <!-- ══════════════ FLOATING LEAD POPUP ══════════════ -->
+  <div class="lead-popup" id="leadPopup" aria-live="polite">
+    <button class="lead-popup-close" type="button" aria-label="Close popup" onclick="closeLeadPopup()">×</button>
+    <div class="lead-popup-icon-wrap">
+      <div class="lead-popup-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M21 15a4 4 0 01-4 4H8l-5 3V7a4 4 0 014-4h10a4 4 0 014 4z" />
+          <path d="M8 10h8M8 14h5" />
+        </svg>
+      </div>
+      <span class="lead-popup-badge">1</span>
+    </div>
+    <h3>Hi, are you looking for an <span>AI-powered enterprise digitization solution?</span></h3>
+    <p>See how NeoLotex can help your team scan, digitize, AI-index, retrieve, and manage business records faster.</p>
+    <a class="lead-popup-cta" href="#contact" onclick="closeLeadPopup()">Book a Free Demo →</a>
+    <span class="lead-popup-help">We’re here to help!</span>
+  </div>
+
+  <button class="lead-popup-trigger" type="button" aria-label="Open enquiry popup" onclick="openLeadPopup()">
+    <svg viewBox="0 0 24 24">
+      <path d="M21 15a4 4 0 01-4 4H8l-5 3V7a4 4 0 014-4h10a4 4 0 014 4z" />
+      <path d="M8 10h8M8 14h5" />
+    </svg>
+  </button>
 
   <!-- ══════════════ THANK YOU PAGE ══════════════ -->
   <div id="ty-page">
@@ -3158,8 +3299,8 @@
         <img src="img/neo2.png" alt style="width: 176px;">
         <div class="ft-brand-sub">Enterprise Digitization</div>
         <p class="ft-brand-desc">NeoLotex Enterprise Digitization helps organizations convert physical records into
-          searchable, structured, and business-ready digital assets through scanning, data entry, data management, and
-          transformation support.</p>
+          searchable, structured, AI-ready, and business-ready digital assets through scanning, AI OCR, data capture,
+          intelligent indexing, data management, and transformation support.</p>
       </div>
       <div>
         <div class="ft-col-h">Services</div>
@@ -3256,22 +3397,21 @@
       document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
     }
 
-    /* ── FAQ Accordion ── */
-    document.querySelectorAll('.faq-question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        const isActive = item.classList.contains('active');
 
-        document.querySelectorAll('.faq-item').forEach(faq => {
-          faq.classList.remove('active');
-        });
+    /* ── Floating lead popup ── */
+    function openLeadPopup() {
+      const popup = document.getElementById('leadPopup');
+      if (popup) popup.classList.add('show');
+    }
 
-        if (!isActive) {
-          item.classList.add('active');
-        }
-      });
+    function closeLeadPopup() {
+      const popup = document.getElementById('leadPopup');
+      if (popup) popup.classList.remove('show');
+    }
+
+    window.addEventListener('load', () => {
+      setTimeout(openLeadPopup, 3000);
     });
-
   </script>
 </body>
 
